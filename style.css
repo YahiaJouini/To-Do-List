@@ -1,0 +1,92 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    height: 100vh;
+    background-image: url("images/bg.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.container h1{
+    color: rgb(3, 3, 71);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.task_input{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+input[type='text']{
+    background: #ebecefff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 70%;
+}
+.add{
+    position: relative;
+    right:40px ;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    border-radius:30px ;
+    background: #0B666A;
+    border: none;
+}
+.tasks{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px ;
+}
+.task{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+p{
+    cursor: pointer;
+    margin: 5px;
+}
+.task img{
+    padding-right:5px ;
+}
+.task img{
+    width: 20px; 
+    height:20px;
+}
+.done{
+    color: silver;
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+.dlt{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px 14px;
+}
+.dlt:hover{
+    background-color: #efecefff;
+    border-radius: 50%;
+}
