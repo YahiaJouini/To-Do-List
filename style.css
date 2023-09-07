@@ -63,9 +63,9 @@ input[type='text']{
     display:flex;
     align-items: center;
     justify-content: flex-start;
+    cursor: pointer;
 }
 p{
-    cursor: pointer;
     margin: 5px;
 }
 .task img{
