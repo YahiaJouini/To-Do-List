@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -13,6 +13,15 @@
         <div class="task_input">
             <input type="text" placeholder="Add your task"><button class="add">Add</button>
         </div>
+    </div>
+    <div class="popup" style="background-color: white; width:100%; height:299px">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <h1>Confirm</h1>
+        <p>Are you sure want to permanently delete this task?</p>
+        <div class="btns">
+        <button class="confirm">Yes, Delete!</button>
+        <button class="cancel">Cancel</button>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>

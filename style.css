@@ -90,3 +90,44 @@ p{
     background-color: #efecefff;
     border-radius: 50%;
 }
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.popup i{
+    font-size: 80px;
+    color: rgb(3, 3, 49);
+}
+.popup p{
+    font-size: 20px;
+}
+.popup .btns{
+    margin: 20px;
+    color: rgb(3, 3, 71);
+}
+.btns button{
+    background:#efecefff;
+    padding: 10px;
+    border: none;
+    margin:0 20px ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.reveal{
+    opacity: 100;
+    pointer-events: auto;   
+}
+.remove{
+    opacity: 0;
+    pointer-events: none;
+}

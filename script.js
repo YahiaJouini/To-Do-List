@@ -1,6 +1,7 @@
 const task=document.querySelector("input[type='text']");
 const add=document.querySelector('.add');
 const container=document.querySelector('.container');
+const popup= document.querySelector('.popup');
 
 function addTask(e){
     let taskNumber=container.childElementCount-2;
@@ -55,15 +56,25 @@ container.addEventListener('click',(e) =>{
     }
 })
 container.addEventListener('click',(e)=>{
-    let target=e.target
+    let target=e.target;
     if(target.className=="dlt" || target.tagName=='I'){
         if(target.parentElement.tagName=="BUTTON"){
-            div=target.parentElement.parentElement
+            div=target.parentElement.parentElement;
         }
         else{
-            div=target.parentElement
+            div=target.parentElement;
         }
-        if(confirm("Are you sure?")){
-        div.remove()
-    }}
-})
+        popup.classList.add('reveal');
+        container.classList.add('remove');
+        popbtns=popup.querySelectorAll('button');
+        popbtns.forEach(function (popbtn) {
+            popbtn.addEventListener('click',()=>{
+                popup.classList.remove('reveal');
+                container.classList.remove('remove');
+                if(popbtn.className=="confirm"){
+                    div.remove()
+                }
+          });
+        });
+
+    }})
